@@ -1,4 +1,4 @@
-# External Build System
+# Swift External Build
 
 This tutorial describes how to build Swift projects on a remote Linux machine right outta Xcode. It targets the early adopters of Server-Side Swift and should minimize the gap between macOS and Linux. It's **work in progress**, so please report any issues that you're running in.
 
@@ -35,8 +35,8 @@ Your good to go, let's go 💪
 
 1. Add a new target and select **External Build System** (in cross-plattform tab) as template.
 3. Set `/bin/bash` as the build tool of the target.
-4. Drop the `externalBuild.sh` script into your project root.
-5. Select your generated target and set arguments (in info tab) to `${SRCROOT}/externalBuild -u <username> -h <hostname>`
+4. Drop the `swiftExternalBuild` script into your project root.
+5. Select your generated target and set arguments (in info tab) to `${SRCROOT}/swiftExternalBuild -u <username> -h <hostname>`
 6. Build your project (with the newly created target) and enjoy your compiled swift code on your remote machine.
 
 ## Run Project
@@ -50,6 +50,6 @@ ssh <username>@<hostname>
 Navigate to the synced project directory and run your project as usual.
 
 ```
-cd ~/ExternalBuild/<projectname>
+cd ~/SwiftExternalBuild/<projectname>
 .build/debug/<projectname>
 ```

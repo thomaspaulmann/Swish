@@ -75,7 +75,7 @@
 /* Begin PBXLegacyTarget section */
 		BE60AEAE1DCD037900724CF5 /* External Build */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "../externalBuild -u <username> -h <hostname>";
+			buildArgumentsString = "../swiftExternalBuild -u <username> -h <hostname>";
 			buildConfigurationList = BE60AEB11DCD037900724CF5 /* Build configuration list for PBXLegacyTarget "External Build" */;
 			buildPhases = (
 			);

@@ -8,9 +8,9 @@ invalidUsage() {
   echo "⚠️ Invalid Usage: $0
   [-u = Username of remote machine]
   [-h = Hostname of remote machine]
-  [-d = Destination on remote machine (Default: ~/ExternalBuild/<projectname>)]
+  [-d = Destination on remote machine (Default: ~/SwiftExternalBuild/<projectname>)]
 
-  Usage: sh externalBuild.sh -u <username> -h <hostname>"
+  Usage: sh swiftExternalBuild -u <username> -h <hostname>"
   exit 1
 }
 
@@ -38,14 +38,14 @@ fi
 
 if [ -z "${destination}" ]; then
   projectName=${PWD##*/}
-  destination="~/ExternalBuild/${projectName}"
+  destination="~/SwiftExternalBuild/${projectName}"
 fi
 
 # Sync
 
 echo "🚀 Start syncing project to ${user}@${host}:${destination}"
 
-rsync -azP --exclude=".build*" --exclude="Packages/*" --exclude="*.xcodeproj*" --exclude="*.DS_Store*" --exclude="externalBuild.sh" . ${user}@${host}:${destination}
+rsync -azP --exclude=".build*" --exclude="Packages/*" --exclude="*.xcodeproj*" --exclude="*.DS_Store*" --exclude="swiftExternalBuild.sh" . ${user}@${host}:${destination}
 
 echo -e "💻 Did sync project to remote machine"
 
@@ -53,7 +53,7 @@ echo -e "💻 Did sync project to remote machine"
 
 echo "⚒ Start building project"
 
-ssh linux@linux-mate.local "source ~/.bash_profile; cd ~/ExternalBuild/${projectName}; swift build"
+ssh linux@linux-mate.local "source ~/.bash_profile; cd ~/SwiftExternalBuild/${projectName}; swift build"
 
 echo "✌️ Did build project on your remote machine"
 

@@ -54,3 +54,6 @@ Navigate to the synced project directory and run your project as usual.
 cd ~/Swish/<projectname>
 .build/debug/<projectname>
 ```
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

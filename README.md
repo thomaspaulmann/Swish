@@ -1,6 +1,7 @@
-# Swift External Build
+# Swish
 
-This tutorial describes how to build Swift projects on a remote Linux machine right outta Xcode. It targets the early adopters of Server-Side Swift and should minimize the gap between macOS and Linux. It's **work in progress**, so please report any issues that you're running in.
+Swish is a simple script for remote building your Swift projects on a Linux machine. Why is that so cool? You can develop in Xcode on macOS and can use an External Build System to deploy your code on Linux.
+The next chapters are all about integrating Swish in Xcode and describes how to build Swift projects on a remote Linux machine right outta Xcode. It targets the early adopters of Server-Side Swift and should minimize the gap between macOS and Linux. It's **work in progress**, so please report any issues that you're running in.
 
 ## Prerequisites:
 
@@ -35,8 +36,8 @@ Your good to go, let's go 💪
 
 1. Add a new target and select **External Build System** (in cross-plattform tab) as template.
 3. Set `/bin/bash` as the build tool of the target.
-4. Drop the `swiftExternalBuild` script into your project root.
-5. Select your generated target and set arguments (in info tab) to `${SRCROOT}/swiftExternalBuild -u <username> -h <hostname>`
+4. Drop the `swish` script into your project root.
+5. Select your generated target and set arguments (in info tab) to `${SRCROOT}/swish -u <username> -h <hostname>`
 6. Build your project (with the newly created target) and enjoy your compiled swift code on your remote machine.
 
 ## Run Project
@@ -50,6 +51,6 @@ ssh <username>@<hostname>
 Navigate to the synced project directory and run your project as usual.
 
 ```
-cd ~/SwiftExternalBuild/<projectname>
+cd ~/Swish/<projectname>
 .build/debug/<projectname>
 ```

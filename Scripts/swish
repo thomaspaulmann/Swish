@@ -1,51 +1,54 @@
 #!/bin/bash
-# Any subsequent(*) commands which fail will cause the shell script to exit immediately
+# ------------------------------------------------------------------
+# [Author] Thomas Paul Mann
+#          Build your Swift projects on a remote machine.
+# ------------------------------------------------------------------
+
+VERSION=1.2
+USAGE="Usage: swish -d <destination> <username> <hostname>"
+
+# --- Fail early ---------------------------------------------------
+
 set -e
 
-# Error
+# --- Options processing -------------------------------------------
 
-invalidUsage() {
-  echo "⚠️  Invalid Usage: $0
-
-  [-u = Username of remote machine]
-  [-h = Hostname of remote machine]
-  [-d = Destination on remote machine (Default: ~/Swish)]
-
-  Usage: swish -u <username> -h <hostname> -d <destination>"
-
-  exit 1
-}
-
-# Parameters
-
-while getopts ":u:h:d" o; do
-    case "${o}" in
-        u)
-            user=${OPTARG}
-            ;;
-        h)
-            host=${OPTARG}
-            ;;
-        d)
-            destination=${OPTARG}
-            ;;
-        *)
-            invalidUsage
-            ;;
-    esac
-done
-shift $((OPTIND-1))
-
-# Check Parameters
-
-if [ -z "${user}" ] || [ -z "${host}" ]; then
-  invalidUsage
+if [ $# == 0 ] ; then
+    echo $USAGE
+    exit 1;
 fi
+
+while getopts ":d:" optname
+  do
+    case "$optname" in
+      d)
+        destination=${OPTARG}
+        ;;
+      \?)
+        echo "Invalid option: -$OPTARG" >&2
+        exit 1;
+        ;;
+    esac
+  done
+shift $(($OPTIND - 1))
 
 if [ -z "${destination}" ]; then
   projectName=${PWD##*/}
   destination="~/Swish/${projectName}"
 fi
+
+user=$1
+host=$2
+
+echo "-----------------------------"
+echo "Configuration:"
+echo "-----------------------------"
+echo "Username: ${user}"
+echo "Hostname: ${host}"
+echo "Destination: ${destination}"
+echo "-----------------------------"
+
+# --- Body --------------------------------------------------------
 
 # Sync
 
@@ -63,4 +66,4 @@ ssh linux@linux-mate.local "source ~/.bash_profile; cd ${destination}; swift bui
 
 echo "✌️  Did build project on your remote machine"
 
-# Finish
+# -----------------------------------------------------------------

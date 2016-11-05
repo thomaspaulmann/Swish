@@ -74,7 +74,7 @@
 /* Begin PBXLegacyTarget section */
 		BE60AEAE1DCD037900724CF5 /* External Build */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "swish -u <username> -h <hostname>";
+			buildArgumentsString = "swish username hostname";
 			buildConfigurationList = BE60AEB11DCD037900724CF5 /* Build configuration list for PBXLegacyTarget "External Build" */;
 			buildPhases = (
 			);

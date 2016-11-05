@@ -1,7 +1,8 @@
 # Swish
 
 Swish is a simple script for remote building your Swift projects on a Linux machine. Why is that so cool? You can develop in Xcode on macOS and can use an External Build System to deploy your code on Linux.
-The next chapters are all about integrating Swish in Xcode and describes how to build Swift projects on a remote Linux machine right outta Xcode. It targets the early adopters of Server-Side Swift and should minimize the gap between macOS and Linux. It's **work in progress**, so please report any issues that you're running in.
+
+The next chapters are all about integrating Swish in Xcode and describes how to build Swift projects on a remote machine right outta Xcode. It targets the early adopters of Server-Side Swift and should minimize the gap between macOS and Linux. It's **work in progress**, so please report any issues that you're running in.
 
 ## Prerequisites:
 

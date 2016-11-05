@@ -72,17 +72,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		BE60AEAE1DCD037900724CF5 /* External Build */ = {
+		BE60AEAE1DCD037900724CF5 /* Swish */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "swish username hostname";
-			buildConfigurationList = BE60AEB11DCD037900724CF5 /* Build configuration list for PBXLegacyTarget "External Build" */;
+			buildConfigurationList = BE60AEB11DCD037900724CF5 /* Build configuration list for PBXLegacyTarget "Swish" */;
 			buildPhases = (
 			);
 			buildToolPath = /bin/bash;
 			buildWorkingDirectory = "";
 			dependencies = (
 			);
-			name = "External Build";
+			name = Swish;
 			passBuildSettingsInEnvironment = 1;
 			productName = "External Build";
 		};
@@ -132,7 +132,7 @@
 			projectRoot = "";
 			targets = (
 				OBJ_13 /* Example */,
-				BE60AEAE1DCD037900724CF5 /* External Build */,
+				BE60AEAE1DCD037900724CF5 /* Swish */,
 			);
 		};
 /* End PBXProject section */
@@ -311,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE60AEB11DCD037900724CF5 /* Build configuration list for PBXLegacyTarget "External Build" */ = {
+		BE60AEB11DCD037900724CF5 /* Build configuration list for PBXLegacyTarget "Swish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE60AEAF1DCD037900724CF5 /* Debug */,

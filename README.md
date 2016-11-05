@@ -5,7 +5,7 @@ The next chapters are all about integrating Swish in Xcode and describes how to 
 
 ## Prerequisites:
 
-* A Remote Machine that running Linux and Swift ([Here](/scripts/setup-swift-3.0-arm.sh) is an installation script for a RaspberryPi 3)
+* A Remote Machine that running Linux and Swift ([Here](/Scripts/setup-swift-3.0-arm.sh) is an installation script for a RaspberryPi 3)
 * SSH KeyPair
 
 ## Setup SSH Authentication

@@ -5,7 +5,7 @@ The next chapters are all about integrating Swish in Xcode and describes how to 
 
 ## Prerequisites:
 
-* A Remote Machine that running Linux and Swift
+* A Remote Machine that running Linux and Swift ([Here](/scripts/setup-swift-3.0-arm.sh) is an installation script for a RaspberryPi 3)
 * SSH KeyPair
 
 ## Setup SSH Authentication
@@ -30,15 +30,26 @@ You can start a new ssh session. You'll have to enter the password, but this sho
 ssh <username>@<hostname>
 ```
 
-Your good to go, let's go 💪
+Your good to go 💪
+
+## Installation
+
+Download the [latest release](https://github.com/thomaspaulmann/Swish/releases/latest), extract it and move the `Swish` script to `/usr/local/bin`.
+
+```
+curl -OL https://github.com/thomaspaulmann/Swish/archive/X.Y.Z.tar.gz
+tar xzvf X.Y.Z.tar.gz
+cp Swish-X.Y.Z/Scripts/swish /usr/local/bin
+```
+
+Now you can run `swish` in your terminal.
 
 ## Configure Xcode
 
 1. Add a new target and select **External Build System** (in cross-plattform tab) as template.
-3. Set `/bin/bash` as the build tool of the target.
-4. Drop the `swish` script into your project root.
-5. Select your generated target and set arguments (in info tab) to `${SRCROOT}/swish -u <username> -h <hostname>`
-6. Build your project (with the newly created target) and enjoy your compiled swift code on your remote machine.
+2. Set `/bin/bash` as the build tool of the target.
+3. Select your generated target and set arguments (in info tab) to `swish -u <username> -h <hostname>`
+4. Build your project (with the newly created target) and enjoy your compiled swift code on your remote machine.
 
 ## Run Project
 

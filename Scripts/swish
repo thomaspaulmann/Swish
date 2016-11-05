@@ -62,7 +62,7 @@ echo -e "💻  Did sync project to remote machine"
 
 echo "⚒  Start building project"
 
-ssh ${user}@${host}:${destination} "source ~/.bash_profile; cd ${destination}; swift build"
+ssh ${user}@${host} "source ~/.bash_profile; cd ${destination}; swift build"
 
 echo "✌️  Did build project on your remote machine"
 

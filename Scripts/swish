@@ -9,26 +9,22 @@ invalidUsage() {
 
   [-u = Username of remote machine]
   [-h = Hostname of remote machine]
-  [-s = Source on local machine (Default: Current directory)]
   [-d = Destination on remote machine (Default: ~/Swish)]
 
-  Usage: swish -s <source> -d <destination> -u <username> -h <hostname>"
-  
+  Usage: swish -u <username> -h <hostname> -d <destination>"
+
   exit 1
 }
 
 # Parameters
 
-while getopts ":u:h:s:d" o; do
+while getopts ":u:h:d" o; do
     case "${o}" in
         u)
             user=${OPTARG}
             ;;
         h)
             host=${OPTARG}
-            ;;
-        s)
-            source=${OPTARG}
             ;;
         d)
             destination=${OPTARG}
@@ -46,19 +42,15 @@ if [ -z "${user}" ] || [ -z "${host}" ]; then
   invalidUsage
 fi
 
-if [ -z "${source}" ]; then
-  source="."
-fi
-
 if [ -z "${destination}" ]; then
   destination="~/Swish"
 fi
 
 # Sync
 
-echo "🚀  Start syncing project from ${source} to ${user}@${host}:${destination}"
+echo "🚀  Start syncing project to ${user}@${host}:${destination}"
 
-rsync -azP --exclude=".build*" --exclude="Packages/*" --exclude="*.xcodeproj*" --exclude="*.DS_Store*" --exclude="swish" ${source} ${user}@${host}:${destination}
+rsync -azP --exclude=".build*" --exclude="Packages/*" --exclude="*.xcodeproj*" --exclude="*.DS_Store*" --exclude="swish" . ${user}@${host}:${destination}
 
 echo -e "💻  Did sync project to remote machine"
 

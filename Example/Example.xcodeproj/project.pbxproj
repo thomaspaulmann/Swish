@@ -42,7 +42,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -50,7 +50,6 @@
 				OBJ_10 /* Tests */,
 				OBJ_11 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -75,7 +74,7 @@
 /* Begin PBXLegacyTarget section */
 		BE60AEAE1DCD037900724CF5 /* External Build */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "../Scripts/swish -s ../Example -u <username> -h <hostname>";
+			buildArgumentsString = "swish -u <username> -h <hostname>";
 			buildConfigurationList = BE60AEB11DCD037900724CF5 /* Build configuration list for PBXLegacyTarget "External Build" */;
 			buildPhases = (
 			);
@@ -127,7 +126,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,6 +318,7 @@
 				BE60AEB01DCD037900724CF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		OBJ_14 /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;

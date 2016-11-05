@@ -45,6 +45,8 @@ cp Swish-X.Y.Z/Scripts/swish /usr/local/bin
 
 Now you can run `swish` in your terminal.
 
+*Note:* Waiting for some stars to add `Swish` to [Homebrew](https://github.com/Homebrew/homebrew-core) 🙃
+
 ## Configure Xcode
 
 1. Add a new target and select **External Build System** (in cross-plattform tab) as template.

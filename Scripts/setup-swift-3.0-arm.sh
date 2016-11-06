@@ -7,6 +7,8 @@
 # - Download:     https://ubuntu-mate.org/blog/ubuntu-mate-for-raspberry-pi-3/
 # - Installation: https://www.raspberrypi.org/documentation/installation/installing-images/
 
+set -e
+
 echo "💪  Start setup Swift 3.0 for ARM."
 
 mkdir ~/.swift

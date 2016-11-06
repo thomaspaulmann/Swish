@@ -68,6 +68,11 @@ Navigate to the synced project directory and run your project as usual.
 cd ~/Swish/<projectname>
 .build/debug/<projectname>
 ```
+
+## Thanks
+
+* Juan Hodgson for the ['Lazer 84'-Font](https://www.behance.net/gallery/31261857/LAZER-84-Free-Font)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

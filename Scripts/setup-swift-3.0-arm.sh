@@ -23,7 +23,7 @@ tar xzvf swift-3.0-2016-10-21-RPi23-ubuntu16.04.tar.gz
 echo "Cleaning..."
 rm ~/.swift/swift-3.0-2016-10-21-RPi23-ubuntu16.04.tar.gz
 
-echo "export PATH=~/.swift/usr/bin:$PATH" >> ~/.profile
+echo "export PATH=~/.swift/usr/bin:$PATH" >> ~/.bash_profile
 
 swift --version
 

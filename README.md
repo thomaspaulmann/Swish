@@ -1,4 +1,4 @@
-# Swish
+![Swish Logo](https://github.com/thomaspaulmann/Swish/raw/master/Design/Exports/Logo.png)
 
 Swish is a simple script for remote building your Swift projects on a Linux machine. Why is that so cool? You can develop in Xcode on macOS and can use an External Build System to deploy your code on Linux.
 

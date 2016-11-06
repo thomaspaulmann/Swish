@@ -69,9 +69,11 @@ cd ~/Swish/<projectname>
 .build/debug/<projectname>
 ```
 
+Have fun 🍻
+
 ## Thanks
 
-* Juan Hodgson for the ['Lazer 84'-Font](https://www.behance.net/gallery/31261857/LAZER-84-Free-Font)
+* Juan Hodgson for the ['Lazer 84'-Font](https://www.behance.net/gallery/31261857/LAZER-84-Free-Font) 🔫
 
 ## License
 

@@ -1,9 +1,12 @@
 import Commander
-import SwishCommands
 
 // MARK: - Properties
 
 private let version = "1.4"
+private let configuration = Configuration(
+    username: "username",
+    hostname: "hostname"
+)
 
 // MARK: - Command Line Interface
 

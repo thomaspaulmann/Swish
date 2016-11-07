@@ -1,6 +1,6 @@
 extension Swish {
 
-    func setup() {
+    func initialise() {
         print("Init Swish...")
     }
 

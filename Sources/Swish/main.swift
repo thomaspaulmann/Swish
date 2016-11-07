@@ -12,7 +12,7 @@ private let swish = Swish(configuration: configuration, synchronizer: synchroniz
 
 Group {
     $0.command("init") {
-        swish.setup()
+        swish.initialise()
     }
 
     $0.command("build", Flag("clean", description: "Makes a clean build.")) { clean in

@@ -1,10 +1,10 @@
 import Sync
-import SwiftPackageManager
+import SwiftCLI
 
 struct Swish {
 
     let configuration: Configurable
     let synchronizer: Syncable
-    let swiftPackageManager: SwiftPackageManager
+    let swiftCLI: SwiftCLI
 
 }

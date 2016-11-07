@@ -21,6 +21,8 @@
 
 import Foundation
 
+public typealias Command = String
+
 /// Class acting as a programmatic interface to the macOS command line
 /// Ref.: https://github.com/spotify/HubFramework/blob/master/live/sources/CommandLine.swift
 public struct CommandLine {
@@ -33,7 +35,7 @@ public struct CommandLine {
      *  - Parameter command: The command to execute
      *  - Parameter arguments: The arguments to pass to the executed command
      */
-    public func execute(_ command: String, with arguments: [String] = []) -> CommandLineResult {
+    public func execute(_ command: Command, with arguments: [String] = []) -> CommandLineResult {
         let process = Process()
         process.launchPath = "/usr/bin/env"
         process.arguments = command.components(separatedBy: " ") + arguments

@@ -1,17 +1,17 @@
 import Commander
 import Sync
-import SwiftPackageManager
+import SwiftCLI
 
 // MARK: - Properties
 
 private let version = "1.4"
 private let configuration = Configuration(username: "username", hostname: "hostname")
 private let synchronizer = Synchronizer()
-private let swiftPackageManager = SwiftPackageManager()
+private let swiftCLI = SwiftCLI()
 private let swish = Swish(
     configuration: configuration,
     synchronizer: synchronizer,
-    swiftPackageManager: swiftPackageManager
+    swiftCLI: swiftCLI
 )
 
 // MARK: - Command Line Interface

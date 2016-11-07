@@ -10,7 +10,7 @@ extension Swish {
 
                 try synchronizer.sync(from: source, to: destination)
 
-                swiftPackageManager.build()
+                swiftCLI.build()
             } catch let error {
                 print(error)
             }

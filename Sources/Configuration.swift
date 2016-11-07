@@ -15,3 +15,11 @@ struct Configuration: Configurable {
     }
 
 }
+
+extension Configuration {
+
+    init(fromJSON: [String : Any]) throws {
+        throw SwishError.invalidConfiguration("Not implemented yet.")
+    }
+
+}

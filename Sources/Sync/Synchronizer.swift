@@ -5,9 +5,7 @@ public struct Synchronizer: Syncable {
 
     private let commandLine = CommandLine()
 
-    public init() {
-
-    }
+    public init() { }
 
     public func sync(from source: String, to destination: String) throws {
         print("Sync from \(source) to \(destination)...")
@@ -28,7 +26,6 @@ public struct Synchronizer: Syncable {
         case .error(let message):
             throw SyncError.couldNotConnect(message)
         }
-
     }
 
 }

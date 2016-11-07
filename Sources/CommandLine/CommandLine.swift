@@ -25,9 +25,7 @@ import Foundation
 /// Ref.: https://github.com/spotify/HubFramework/blob/master/live/sources/CommandLine.swift
 public struct CommandLine {
 
-    public init() {
-
-    }
+    public init() { }
 
     /**
      *  Execute a command on the command line and return the result

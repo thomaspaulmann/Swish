@@ -1,3 +1,3 @@
-func run() {
+public func run() {
     print("Run...")
 }

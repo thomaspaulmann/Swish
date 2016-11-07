@@ -1,3 +1,3 @@
-func stop() {
+public func stop() {
     print("Stop...")
 }

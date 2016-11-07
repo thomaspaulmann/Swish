@@ -1,4 +1,5 @@
 import Commander
+import SwishCommands
 
 // MARK: - Properties
 

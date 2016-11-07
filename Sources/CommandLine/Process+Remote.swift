@@ -1,7 +1,6 @@
 import Foundation
 
-
-protocol RemoteConfigurable {
+public protocol RemoteConfigurable {
 
     var username: String { get }
     var hostname: String { get }
@@ -10,7 +9,7 @@ protocol RemoteConfigurable {
 
 extension RemoteConfigurable {
 
-    var sshCommand: String {
+    internal var sshCommand: String {
         return "ssh \(username)@\(hostname); source ~/.bash_profile;"
     }
 
@@ -19,9 +18,20 @@ extension RemoteConfigurable {
 extension Process {
 
     /// This is a really naive implementation of a Remote Process 🙃
-    func launchRemote(with configuration: RemoteConfigurable, in destination: String? = nil) {
-        // Add to beginning of process commands
-        // Launch
+    func launch(with configuration: RemoteConfigurable? = nil) {
+        guard let configuration = configuration else {
+            launch()
+            return
+        }
+
+        // If there are no arguments, do nothing.
+        guard var arguments = arguments else {
+            return
+        }
+
+        // Prefix arguments with SSH command
+        arguments.insert(configuration.sshCommand, at: 0)
+
         launch()
     }
 

@@ -27,15 +27,13 @@ public typealias Command = String
 /// Ref.: https://github.com/spotify/HubFramework/blob/master/live/sources/CommandLine.swift
 public class CommandLine {
 
-    public init() { }
-
     /**
      *  Execute a command on the command line and return the result
      *
      *  - Parameter command: The command to execute
      *  - Parameter arguments: The arguments to pass to the executed command
      */
-    public static func execute(_ command: Command, with arguments: [String] = []) -> CommandLineResult {
+    public static func execute(_ command: Command, with arguments: [String], on remoteConfiguration: RemoteConfigurable? = nil) -> CommandLineResult {
         let process = Process()
         process.launchPath = "/usr/bin/env"
         process.arguments = command.components(separatedBy: " ") + arguments
@@ -44,7 +42,7 @@ public class CommandLine {
         let errorPipe = Pipe()
         process.standardOutput = outputPipe
         process.standardError = errorPipe
-        process.launch()
+        process.launch(with: remoteConfiguration)
 
         if let errorOuput = output(fromPipe: errorPipe) {
             if errorOuput.characters.count > 0 {
@@ -59,4 +57,5 @@ public class CommandLine {
         let outputData = pipe.fileHandleForReading.readDataToEndOfFile()
         return String(data: outputData, encoding: .utf8)
     }
+
 }

@@ -1,3 +1,5 @@
+import Sync
+
 struct Swish {
 
     let configuration: Configurable

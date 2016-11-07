@@ -9,6 +9,8 @@ extension Swish {
                 let destination = "\(configuration.username)@\(configuration.hostname):\(configuration.destination)"
 
                 try synchronizer.sync(from: source, to: destination)
+
+                swiftPackageManager.build()
             } catch let error {
                 print(error)
             }

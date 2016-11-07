@@ -18,7 +18,6 @@ public struct SwiftPackageManager {
         case .error(let message):
             print(message)
         }
-
     }
 
 }

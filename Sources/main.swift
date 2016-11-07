@@ -3,10 +3,7 @@ import Commander
 // MARK: - Properties
 
 private let version = "1.4"
-private let configuration = Configuration(
-    username: "username",
-    hostname: "hostname"
-)
+private let configuration = Configuration(username: "username", hostname: "hostname")
 private let swish = Swish(configuration: configuration)
 
 // MARK: - Command Line Interface

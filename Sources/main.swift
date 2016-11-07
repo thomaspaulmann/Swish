@@ -4,7 +4,8 @@ import Commander
 
 private let version = "1.4"
 private let configuration = Configuration(username: "username", hostname: "hostname")
-private let swish = Swish(configuration: configuration)
+private let synchronizer = Synchronizer()
+private let swish = Swish(configuration: configuration, synchronizer: synchronizer)
 
 // MARK: - Command Line Interface
 

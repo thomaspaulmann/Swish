@@ -4,11 +4,10 @@ struct Configuration: Configurable {
 
     let username: String
     let hostname: String
+    let source: String
+    let destination: String
 
-    var source: URL?
-    var destination: URL?
-
-    init(username: String, hostname: String, source: URL? = nil, destination: URL? = nil) {
+    init(username: String, hostname: String, source: String = ".", destination: String = "~/Swish") {
         self.username = username
         self.hostname = hostname
         self.source = source

@@ -4,6 +4,8 @@ extension Swish {
         if clean {
             print("Clean build...")
         } else {
+            synchronizer.sync(from: configuration.source, to: configuration.destination)
+
             print("Build...")
         }
     }

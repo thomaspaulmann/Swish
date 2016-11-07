@@ -16,8 +16,9 @@ public struct Synchronizer: Syncable {
         //let destination   = "\(configuration.username)@\(configuration.hostname):\(configuration.destination)"
         let excludeFilter = "--exclude='.build*' --exclude='Packages/*' --exclude='*.xcodeproj*' --exclude='*.DS_Store*'"
 
+        // rsync -azP --exclude=".build*" --exclude="Packages/*" --exclude="*.xcodeproj*" --exclude="*.DS_Store*" . ${user}@${host}:${destination}
         let command = "/usr/bin/rsync"
-        let arguments = ["-azP", source, destination, excludeFilter]
+        let arguments = ["-azP", excludeFilter, source, destination]
 
         let result = commandLine.execute(command, with: arguments)
 

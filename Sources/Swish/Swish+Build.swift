@@ -5,7 +5,10 @@ extension Swish {
             print("Clean build...")
         } else {
             do {
-                try synchronizer.sync(from: configuration.source, to: configuration.destination)
+                let source = configuration.source
+                let destination = "\(configuration.username)@\(configuration.hostname):\(configuration.destination)"
+
+                try synchronizer.sync(from: source, to: destination)
             } catch let error {
                 print(error)
             }

@@ -5,6 +5,6 @@ struct Swish {
 
     let configuration: Configurable
     let synchronizer: Syncable
-    let swiftCLI: SwiftCLI
+    let swift: Swift
 
 }

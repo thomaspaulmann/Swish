@@ -7,11 +7,11 @@ import SwiftCLI
 private let version = "1.4"
 private let configuration = Configuration(username: "username", hostname: "hostname")
 private let synchronizer = Synchronizer()
-private let swiftCLI = SwiftCLI()
+private let swift = Swift()
 private let swish = Swish(
     configuration: configuration,
     synchronizer: synchronizer,
-    swiftCLI: swiftCLI
+    swift: swift
 )
 
 // MARK: - Command Line Interface

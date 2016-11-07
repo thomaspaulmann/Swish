@@ -1,6 +1,6 @@
 import CommandLine
 
-public struct SwiftCLI {
+public struct Swift {
 
     public let package = SwiftPackageManager()
 
@@ -14,12 +14,15 @@ public struct SwiftCLI {
 
         let result = commandLine.execute(command, with: arguments)
 
-        switch result {
-        case .output(let output):
-            print(output)
-        case .error(let message):
-            print(message)
-        }
+        print(result)
+    }
+
+    public func version() {
+        let arguments = ["--version"]
+
+        let result = commandLine.execute(command, with: arguments)
+
+        print(result)
     }
 
 }

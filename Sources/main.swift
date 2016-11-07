@@ -1,23 +1,25 @@
 import Commander
 
+// MARK: - Properties
+
+private let version = "1.4"
+
+// MARK: - Command Line Interface
+
 Group {
     $0.command("init") {
-        print("Init Swish...")
+        setup()
     }
 
     $0.command("build", Flag("clean", description: "Makes a clean build.")) { clean in
-        if clean {
-            print("Clean build Swish...")
-        } else {
-            print("Build Swish...")
-        }
+        build(clean: clean)
     }
 
     $0.command("run") {
-        print("Run Swish...")
+        run()
     }
 
     $0.command("stop") {
-        print("Stop Swish...")
+        stop()
     }
-}.run()
+}.run(version)

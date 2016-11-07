@@ -33,19 +33,13 @@ ssh <username>@<hostname>
 
 Your good to go 💪
 
-## Installation
-
-Download the [latest release](https://github.com/thomaspaulmann/Swish/releases/latest), extract it and move the `Swish` script to `/usr/local/bin`.
+## Installation with Homebrew
 
 ```
-curl -OL https://github.com/thomaspaulmann/Swish/archive/X.Y.Z.tar.gz
-tar xzvf X.Y.Z.tar.gz
-cp Swish-X.Y.Z/Scripts/swish /usr/local/bin
+brew install thomaspaulmann/homebrew-formulae/swish
 ```
 
 Now you can run `swish` in your terminal.
-
-*Note:* Waiting for some stars to add `Swish` to [Homebrew](https://github.com/Homebrew/homebrew-core) 🙃
 
 ## Configure Xcode
 

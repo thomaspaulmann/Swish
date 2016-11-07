@@ -35,8 +35,8 @@ public class CommandLine {
      */
     public static func execute(_ command: Command, with arguments: [String], on remoteConfiguration: RemoteConfigurable? = nil) -> CommandLineResult {
         let process = Process()
-        process.launchPath = "/usr/bin/env"
-        process.arguments = command.components(separatedBy: " ") + arguments
+        process.launchPath = command
+        process.arguments = arguments
 
         let outputPipe = Pipe()
         let errorPipe = Pipe()

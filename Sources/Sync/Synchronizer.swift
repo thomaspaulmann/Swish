@@ -3,8 +3,6 @@ import CommandLine
 
 public struct Synchronizer: Syncable {
 
-    private let commandLine = CommandLine()
-
     public init() { }
 
     public func sync(from source: String, to destination: String) throws {
@@ -18,7 +16,7 @@ public struct Synchronizer: Syncable {
         let command = "/usr/bin/rsync"
         let arguments = ["-azP", excludeFilter, source, destination]
 
-        let result = commandLine.execute(command, with: arguments)
+        let result = CommandLine.execute(command, with: arguments)
 
         switch result {
         case .output(let output):

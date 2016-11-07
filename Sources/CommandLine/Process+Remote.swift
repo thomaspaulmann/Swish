@@ -1,5 +1,6 @@
 import Foundation
 
+
 protocol RemoteConfigurable {
 
     var username: String { get }
@@ -17,6 +18,7 @@ extension RemoteConfigurable {
 
 extension Process {
 
+    /// This is a really naive implementation of a Remote Process 🙃
     func launchRemote(with configuration: RemoteConfigurable, in destination: String? = nil) {
         // Add to beginning of process commands
         // Launch

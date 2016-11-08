@@ -1,7 +1,4 @@
-os:
-  - osx
-  - linux
-
+os: osx
 osx_image: xcode8
 language: generic
 sudo: required

@@ -32,8 +32,9 @@ public class CommandLine {
      *
      *  - Parameter command: The command to execute
      *  - Parameter arguments: The arguments to pass to the executed command
+     *  - Parameter machine: The machine on which the command is executed
      */
-    public static func execute(_ command: Command, with arguments: [String], on remoteConfiguration: RemoteConfigurable? = nil) -> CommandLineResult {
+    public static func execute(_ command: Command, with arguments: [String], on machine: Machine = .local) -> CommandLineResult {
         let process = Process()
         process.launchPath = command
         process.arguments = arguments
@@ -42,7 +43,7 @@ public class CommandLine {
         let errorPipe = Pipe()
         process.standardOutput = outputPipe
         process.standardError = errorPipe
-        process.launch(with: remoteConfiguration)
+        process.launch(on: machine)
 
         if let errorOuput = output(fromPipe: errorPipe) {
             if errorOuput.characters.count > 0 {

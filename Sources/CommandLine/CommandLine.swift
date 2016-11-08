@@ -21,6 +21,10 @@
 
 import Foundation
 
+#if !os(macOS)
+typealias Process = Task
+#endif
+
 public typealias Command = String
 
 /// Class acting as a programmatic interface to the macOS command line

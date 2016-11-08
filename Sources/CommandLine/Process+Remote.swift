@@ -1,5 +1,9 @@
 import Foundation
 
+#if !os(macOS)
+typealias Process = Task
+#endif
+
 extension Process {
 
     /// This is a really naive implementation of a Remote Process 🙃

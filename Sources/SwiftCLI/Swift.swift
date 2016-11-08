@@ -8,8 +8,12 @@ public struct Swift {
 
     public init() { }
 
-    public func build(clean: Bool = false) {
-        let arguments = [clean ? "build --clean" : "build"]
+    public func build(type: BuildType = .debug, clean: Bool = false) {
+        let arguments = [
+            "build",
+            "\(type)",
+            clean ? "--clean" : ""
+        ]
 
         let result = CommandLine.execute(command, with: arguments)
 

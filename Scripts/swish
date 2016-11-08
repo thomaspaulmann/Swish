@@ -4,7 +4,7 @@
 #          Build your Swift projects on a remote machine.
 # ------------------------------------------------------------------
 
-VERSION=1.4
+VERSION=1.5
 USAGE="Usage: swish -d <destination> <username> <hostname>"
 
 # --- Fail early ---------------------------------------------------
@@ -54,6 +54,7 @@ echo "-----------------------------"
 
 echo "🚀  Start syncing project to ${user}@${host}:${destination}"
 
+ssh ${user}@${host} "mkdir -p ${destination}"
 rsync -azP --exclude=".build*" --exclude="Packages/*" --exclude="*.xcodeproj*" --exclude="*.DS_Store*" . ${user}@${host}:${destination}
 
 echo -e "💻  Did sync project to remote machine"

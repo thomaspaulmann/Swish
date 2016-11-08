@@ -34,7 +34,7 @@ public class CommandLine {
      *  - Parameter arguments: The arguments to pass to the executed command
      *  - Parameter machine: The machine on which the command is executed
      */
-    public static func execute(_ command: Command, with arguments: [String], on machine: Machine = .local) -> CommandLineResult {
+    public static func execute(_ command: Command, with arguments: [String] = [], on machine: Machine = .local) -> CommandLineResult {
         let process = Process()
         process.launchPath = command
         process.arguments = arguments

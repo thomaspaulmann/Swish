@@ -4,8 +4,12 @@ public struct SwiftPackageManager {
 
     private let command = "/usr/bin/swift"
 
-    public func initialise(type: SwiftPackageType? = nil) {
-        let arguments = ["package", "init", type?.rawValue ?? ""]
+    public func initialise(type: PackageType = .empty) {
+        let arguments = [
+            "package",
+            "init",
+            "\(type)"
+        ]
 
         let result = CommandLine.execute(command, with: arguments)
 

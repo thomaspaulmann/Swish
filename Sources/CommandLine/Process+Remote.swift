@@ -13,6 +13,8 @@ extension Process {
             launch()
             break
         case .remote(let configuration):
+            // TODO: Change LaunchPath to SSH, and move "local" launch path to arguments
+
             // If there are no arguments, do nothing.
             guard var arguments = arguments else {
                 return

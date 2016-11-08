@@ -12,3 +12,6 @@ install:
 
 script:
   - swift build
+
+notifications:
+  email: false

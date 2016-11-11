@@ -1,5 +1,7 @@
 import Foundation
 
+typealias JSON = [String : AnyObject]
+
 struct Configuration: Configurable {
 
     let username: String
@@ -18,7 +20,7 @@ struct Configuration: Configurable {
 
 extension Configuration {
 
-    init(fromJSON: [String : Any]) throws {
+    init(fromJSON: JSON) throws {
         throw SwishError.invalidConfiguration("Not implemented yet.")
     }
 

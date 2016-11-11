@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_59"
+               BlueprintIdentifier = "OBJ_56"
                BuildableName = "Spectre.framework"
                BlueprintName = "Spectre"
                ReferencedContainer = "container:Swish.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_73"
+               BlueprintIdentifier = "OBJ_70"
                BuildableName = "Commander.framework"
                BlueprintName = "Commander"
                ReferencedContainer = "container:Swish.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_90"
+               BlueprintIdentifier = "OBJ_87"
                BuildableName = "CommandLine.framework"
                BlueprintName = "CommandLine"
                ReferencedContainer = "container:Swish.xcodeproj">
@@ -56,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_99"
+               BlueprintIdentifier = "OBJ_96"
                BuildableName = "Sync.framework"
                BlueprintName = "Sync"
                ReferencedContainer = "container:Swish.xcodeproj">
@@ -70,7 +70,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_110"
+               BlueprintIdentifier = "OBJ_107"
                BuildableName = "Swish"
                BlueprintName = "Swish"
                ReferencedContainer = "container:Swish.xcodeproj">
@@ -101,7 +101,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_59"
+            BlueprintIdentifier = "OBJ_56"
             BuildableName = "Spectre.framework"
             BlueprintName = "Spectre"
             ReferencedContainer = "container:Swish.xcodeproj">

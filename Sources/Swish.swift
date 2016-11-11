@@ -1,10 +1,13 @@
 import Sync
-import SwiftCLI
 
 struct Swish {
 
     let configuration: Configurable
-    let synchronizer: Syncable
-    let swift: Swift
+    let synchronizer = Synchronizer()
+    let swift = Swift()
+
+    init(with configuration: Configurable) {
+        self.configuration = configuration
+    }
 
 }

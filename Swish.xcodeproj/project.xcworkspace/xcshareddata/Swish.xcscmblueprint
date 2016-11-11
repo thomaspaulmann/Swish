@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "82E892619093C92787869C43FE4E33908B0ABA14",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ED527502FF2A3B65770CE0044A5BFD2C5583EA32" : 9223372036854775807,
+    "82E892619093C92787869C43FE4E33908B0ABA14" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "805204BE-3D16-4F58-9FDD-5A5E447BF28A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ED527502FF2A3B65770CE0044A5BFD2C5583EA32" : "Swish\/Packages\/Sync-0.1.0\/",
+    "82E892619093C92787869C43FE4E33908B0ABA14" : "Swish\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Swish",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Swish.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/thomaspaulmann\/Swish.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82E892619093C92787869C43FE4E33908B0ABA14"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/swish-server\/Sync.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ED527502FF2A3B65770CE0044A5BFD2C5583EA32"
+    }
+  ]
+}

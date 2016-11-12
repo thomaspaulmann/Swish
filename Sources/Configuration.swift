@@ -1,7 +1,5 @@
 import Foundation
 
-typealias JSON = [String : AnyObject]
-
 enum ConfigurationError: Error {
 
     case noConfigurationFile
@@ -12,11 +10,15 @@ enum ConfigurationError: Error {
 
 struct Configuration {
 
+    typealias JSON = [String : AnyObject]
+
+
     // MARK: - Properties
 
     let machine: String
     let source: String
     let destination: String
+
 
     // MARK: - Initialiser
 
@@ -46,6 +48,7 @@ struct Configuration {
     }
 
 }
+
 
 // MARK: - Template
 

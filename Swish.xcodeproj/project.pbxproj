@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE2326AC1DD64B8400442A19 /* FileHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2326AB1DD64B8400442A19 /* FileHandling.swift */; };
 		OBJ_101 /* Syncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Syncable.swift */; };
 		OBJ_102 /* SyncError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* SyncError.swift */; };
 		OBJ_103 /* Synchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Synchronizer.swift */; };
@@ -97,7 +96,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE2326AB1DD64B8400442A19 /* FileHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandling.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
@@ -240,7 +238,6 @@
 				OBJ_46 /* Swish+Stop.swift */,
 				OBJ_47 /* Swish.swift */,
 				OBJ_48 /* SwishError.swift */,
-				BE2326AB1DD64B8400442A19 /* FileHandling.swift */,
 			);
 			name = Swish;
 			path = Sources;
@@ -460,7 +457,6 @@
 				OBJ_63 /* Expectation.swift in Sources */,
 				OBJ_64 /* Failure.swift in Sources */,
 				OBJ_65 /* Global.swift in Sources */,
-				BE2326AC1DD64B8400442A19 /* FileHandling.swift in Sources */,
 				OBJ_66 /* GlobalContext.swift in Sources */,
 				OBJ_67 /* Reporter.swift in Sources */,
 				OBJ_68 /* Reporters.swift in Sources */,

@@ -2,11 +2,13 @@ import Foundation
 import Commander
 import Sync
 
+
 // MARK: - Properties
 
 private let version = "1.4"
 
 var swish = Swish()
+
 
 // MARK: - Configuration
 
@@ -19,6 +21,7 @@ do {
 } catch let error {
     print(error)
 }
+
 
 // MARK: - Command Line Interface
 

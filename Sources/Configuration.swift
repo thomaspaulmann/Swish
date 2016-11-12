@@ -68,7 +68,7 @@ extension Configuration {
         do {
             try template.write(to: url, atomically: false, encoding: .utf8)
 
-            print("👷 Did create Swish Template @ \(url.absoluteURL.path)")
+            print("👷  Create Swish Template @ \(url.absoluteURL.path)")
         } catch {
             throw ConfigurationError.unableToWriteTemplate
         }

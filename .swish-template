@@ -1,0 +1,6 @@
+{
+  "username": "Insert the username of your user on the remote machine.",
+  "hostname": "Insert the hostname of your remote machine.",
+  "source": "Insert the root of your project folder. [Default: .]"
+  "destination": "Insert the directory for your remote project. [Default: ~/Swish]"
+}

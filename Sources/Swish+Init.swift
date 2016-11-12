@@ -1,7 +1,14 @@
+import Foundation
+
 extension Swish {
 
     func initialise() {
-        print("Init Swish...")
+        do {
+            self.configuration = try Configuration.writeTemplate()
+        } catch let error {
+            print(error)
+        }
     }
-
+    
 }
+

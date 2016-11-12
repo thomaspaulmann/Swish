@@ -1,12 +1,16 @@
+import Foundation
 import Sync
 
-struct Swish {
+class Swish {
 
-    let configuration: Configurable
+    var configuration: Configuration?
+
     let synchronizer = Synchronizer()
     let swift = Swift()
 
-    init(with configuration: Configurable) {
+    // MARK: - Initialiser
+
+    init(with configuration: Configuration? = nil) {
         self.configuration = configuration
     }
 

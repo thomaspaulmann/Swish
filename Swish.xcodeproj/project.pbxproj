@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2326AC1DD64B8400442A19 /* FileHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2326AB1DD64B8400442A19 /* FileHandling.swift */; };
 		OBJ_101 /* Syncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Syncable.swift */; };
 		OBJ_102 /* SyncError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* SyncError.swift */; };
 		OBJ_103 /* Synchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Synchronizer.swift */; };
 		OBJ_105 /* CommandLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* CommandLine.framework */; };
 		OBJ_112 /* BuildType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* BuildType.swift */; };
-		OBJ_113 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Configurable.swift */; };
 		OBJ_114 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Configuration.swift */; };
 		OBJ_115 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* main.swift */; };
 		OBJ_116 /* PackageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* PackageType.swift */; };
@@ -97,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE2326AB1DD64B8400442A19 /* FileHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandling.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
@@ -120,7 +121,6 @@
 		OBJ_33 /* SyncError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncError.swift; sourceTree = "<group>"; };
 		OBJ_34 /* Synchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronizer.swift; sourceTree = "<group>"; };
 		OBJ_36 /* BuildType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildType.swift; sourceTree = "<group>"; };
-		OBJ_37 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		OBJ_38 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		OBJ_39 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_40 /* PackageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageType.swift; sourceTree = "<group>"; };
@@ -229,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_36 /* BuildType.swift */,
-				OBJ_37 /* Configurable.swift */,
 				OBJ_38 /* Configuration.swift */,
 				OBJ_39 /* main.swift */,
 				OBJ_40 /* PackageType.swift */,
@@ -241,6 +240,7 @@
 				OBJ_46 /* Swish+Stop.swift */,
 				OBJ_47 /* Swish.swift */,
 				OBJ_48 /* SwishError.swift */,
+				BE2326AB1DD64B8400442A19 /* FileHandling.swift */,
 			);
 			name = Swish;
 			path = Sources;
@@ -253,7 +253,7 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -261,7 +261,6 @@
 				OBJ_49 /* Tests */,
 				OBJ_50 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_50 /* Products */ = {
@@ -408,7 +407,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -438,7 +437,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_112 /* BuildType.swift in Sources */,
-				OBJ_113 /* Configurable.swift in Sources */,
 				OBJ_114 /* Configuration.swift in Sources */,
 				OBJ_115 /* main.swift in Sources */,
 				OBJ_116 /* PackageType.swift in Sources */,
@@ -462,6 +460,7 @@
 				OBJ_63 /* Expectation.swift in Sources */,
 				OBJ_64 /* Failure.swift in Sources */,
 				OBJ_65 /* Global.swift in Sources */,
+				BE2326AC1DD64B8400442A19 /* FileHandling.swift in Sources */,
 				OBJ_66 /* GlobalContext.swift in Sources */,
 				OBJ_67 /* Reporter.swift in Sources */,
 				OBJ_68 /* Reporters.swift in Sources */,

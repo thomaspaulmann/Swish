@@ -1,11 +1,24 @@
+import Foundation
 import Commander
 import Sync
 
 // MARK: - Properties
 
 private let version = "1.4"
-private let configuration = Configuration(username: "username", hostname: "hostname")
-private let swish = Swish(with: configuration)
+
+var swish = Swish()
+
+// MARK: - Configuration
+
+do {
+    let currentDirectory = FileManager.default.currentDirectoryPath
+    let url = URL(fileURLWithPath: currentDirectory).appendingPathComponent("Swish")
+    let configuration = try Configuration(fromURL: url)
+
+    swish.configuration = configuration
+} catch let error {
+    print(error)
+}
 
 // MARK: - Command Line Interface
 

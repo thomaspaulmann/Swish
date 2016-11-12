@@ -6,8 +6,7 @@ import Sync
 // MARK: - Properties
 
 private let version = "1.4"
-
-var swish = Swish()
+private let swish = Swish()
 
 
 // MARK: - Configuration

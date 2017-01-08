@@ -1,0 +1,5 @@
+{
+  "machine": "username@hostname",
+  "source": ".",
+  "destination": "~/Swish"
+}

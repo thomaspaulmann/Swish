@@ -12,15 +12,15 @@ struct Configuration {
 
     typealias JSON = [String : AnyObject]
 
-
     // MARK: - Properties
 
     let machine: String
     let source: String
     let destination: String
 
-
     // MARK: - Initialiser
+
+    // TODO: Public initialiser should only gave possibility to read from file and write to template
 
     init(machine: String, source: String = ".", destination: String = "~/Swish") {
         self.machine = machine
@@ -54,7 +54,7 @@ struct Configuration {
 
 extension Configuration {
 
-    static func writeTemplate() throws -> Configuration? {
+    static func writeFromTemplate() throws -> Configuration? {
         let template =
             "{\n" +
                 "    \"machine\": \"username@hostname\",\n" +
